@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme="night" data-motion="full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Reader's Register — University of Oxford</title>
+<meta name="description" content="A personal reading tracker. Log pages, tick chapters, and raise the University of Oxford from a struggling institution to the best in the world.">
+<meta name="theme-color" content="#00101F">
+<link rel="icon" href="assets/oxford-crest.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/oxford-crest.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- navigation: a left rail on desktop, a tab bar on phones -->
+  <aside class="rail">
+    <a class="rail__mark brandplate" href="#register" aria-label="The Reader's Register">
+      <img src="assets/oxford-mark.png" alt="University of Oxford" width="800" height="240">
+    </a>
+    <p class="rail__sub">The Reader&rsquo;s Register</p>
+
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+
+    <div class="rail__foot">
+      <div class="rail__standing" id="railStanding"><span>World standing</span><b>0.0%</b></div>
+      <div class="ind__track"><div class="ind__fill" id="railBar" style="width:0"></div></div>
+      <p class="rail__credit">Fan made by Billy Christopher</p>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <img src="assets/oxford-crest.png" alt="" width="27" height="24">
+    <span>The Reader&rsquo;s Register</span>
+  </header>
+
+  <main class="main">
+    <div id="view" class="view"></div>
+  </main>
+
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="ceremony" id="ceremony" hidden></div>
+<div class="toast-stack" id="toasts" aria-live="polite"></div>
+
+<noscript>
+  <div style="padding:40px;max-width:60ch;margin:0 auto">
+    <h1>JavaScript is switched off</h1>
+    <p>The Reader&rsquo;s Register keeps everything in your own browser and needs JavaScript to run.
+    Switch it on for this page and reload.</p>
+  </div>
+</noscript>
+
+<script src="data/alumni.js"></script>
+<script src="data/colleges.js"></script>
+<script src="data/videos.js"></script>
+<script src="js/core.js"></script>
+<script src="js/map.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
